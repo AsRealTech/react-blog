@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ClickCounter.css'; // For styling
+import './assets/ClickCounter.css'; // For styling
 
 const ClickCounter = () => {
   const [count, setCount] = useState(0);
