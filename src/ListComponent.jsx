@@ -1,9 +1,20 @@
-export default function ListComponent({ userLists }) {
+// ListComponent.jsx
+import React from 'react';
+
+const ListComponent = ({ items, renderItem }) => {
+  if (!items || items.length === 0) {
+    return <div>No items to display.</div>;
+  }
+
   return (
     <ul>
-      {userLists.map(user => (
-        <li key={user.id}>Name: {user.name}</li>
+      {items.map((item, index) => (
+        <li key={index}>
+          {renderItem(item)}
+        </li>
       ))}
     </ul>
   );
-}
+};
+
+export default ListComponent;
