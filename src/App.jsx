@@ -1,10 +1,10 @@
-import ClickCounter from './ClickCounter';
+import ListComponent from './ListComponent';
 
 function App() {
 
   return (
     <>
-      <ClickCounter />
+      <ListComponent />
     </>
   )
 }
